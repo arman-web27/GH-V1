@@ -1,0 +1,1794 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <meta name="theme-color" content="#12372A" />
+    <title>GathHeal Capsules — Ayurvedic Herbal Wellness Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Halant:wght@400;600;700&family=Hind:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      :root {
+        --green: #12372a;
+        --green2: #1f5a43;
+        --leaf: #4f7b58;
+        --sage: #dfe9db;
+        --cream: #fbf7ec;
+        --card: #fff;
+        --gold: #d39b3a;
+        --gold2: #efc76f;
+        --clay: #b85c38;
+        --ink: #211d17;
+        --muted: #665f54;
+        --line: #e6ddca;
+        --w: 450px;
+        --r: 18px;
+        --shadow: 0 12px 30px rgba(25, 42, 31, 0.11);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Hind", sans-serif;
+        background: #d7ddcf;
+        color: var(--ink);
+        display: flex;
+        justify-content: center;
+      }
+      button,
+      input {
+        font: inherit;
+      }
+      .page {
+        width: 100%;
+        max-width: var(--w);
+        background: var(--cream);
+        min-height: 100vh;
+        overflow: hidden;
+        padding-bottom: 65px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Halant", serif;
+        line-height: 1.25;
+        font-size: 28px;
+      }
+      .topbar {
+        height: 60px;
+        padding: 0 16px;
+        background: var(--green);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(239, 199, 111, 0.45);
+      }
+      .brand {
+        font-family: "Halant", serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--gold2);
+      }
+      .brand small {
+        display: block;
+        font:
+          500 9px/1 "Hind",
+          sans-serif;
+        letter-spacing: 1.2px;
+        color: #dce7df;
+      }
+      .topbar a {
+        font-size: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        padding: 7px 11px;
+      }
+      .banner {
+        width: 100%;
+        background: var(--green);
+        overflow: hidden;
+      }
+
+      .banner img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 9 / 16;
+        object-fit: contain;
+        object-position: center;
+        background: var(--cream);
+      }
+      .kicker {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        color: #B85C38;
+      }
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 18px;
+        background: var(--clay);
+        color: #fff;
+        border-radius: 12px;
+        padding: 13px 20px;
+        font-weight: 700;
+        box-shadow: 0 10px 20px rgba(184, 92, 56, 0.25);
+      }
+      section {
+        padding: 20px 20px;
+      }
+      .light {
+        background: var(--cream);
+      }
+      .dark {
+        background: var(--green);
+        color: #fff;
+      }
+      .soft {
+        background: #fbf7ec;
+      }
+      .section-head {
+        text-align: center;
+        margin-bottom: 22px;
+      }
+      .section-head h2 {
+        font-size: 28px;
+        margin-top: 5px;
+      }
+      .dark .section-head h2 {
+        color: #fff;
+      }
+      .section-head p {
+        margin-top: 7px;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.55;
+      }
+      .dark .section-head p {
+        color: #d7e3d9;
+      }
+      .cards {
+        display: grid;
+        gap: 12px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--r);
+        padding: 17px;
+        box-shadow: var(--shadow);
+      }
+      .dark .card {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(239, 199, 111, 0.24);
+        box-shadow: none;
+      }
+      .card h3 {
+        font-size: 20px;
+        color: var(--green);
+        margin-bottom: 5px;
+      }
+      .dark .card h3 {
+        color: var(--gold2);
+      }
+      .card p,
+      .card li {
+        font-size: 15px;
+        line-height: 1.58;
+        color: var(--muted);
+      }
+      .dark .card p,
+      .dark .card li {
+        color: #dce6de;
+      }
+      .checklist {
+        list-style: none;
+        display: grid;
+        gap: 9px;
+      }
+      .checklist li {
+        position: relative;
+        padding-left: 27px;
+      }
+      .checklist li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--leaf);
+        font-weight: 800;
+      }
+      .dark .checklist li:before {
+        color: var(--gold2);
+      }
+      .problem-visual {
+        width: 100%;
+        margin: 4px auto 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: var(--shadow);
+      }
+      .problem-visual img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .causes .card {
+        border-left: 4px solid var(--gold);
+      }
+      .quote-box {
+        padding: 22px 18px;
+        border-radius: 20px;
+        background: var(--green);
+        color: #fff;
+        text-align: center;
+      }
+      .quote-box p {
+        font-family: "Halant", serif;
+        font-size: 20px;
+        line-height: 1.45;
+      }
+      .quote-box strong {
+        color: var(--gold2);
+      }
+      .product-wrap {
+        text-align: center;
+      }
+      .product-panel{position:relative;overflow:hidden;padding:20px 16px;border:1px solid rgba(239,199,111,.35);border-radius:24px;background:rgba(255,255,255,.055);box-shadow:0 16px 34px rgba(0,0,0,.18)}
+      .product-panel:before{content:"";position:absolute;top:-55px;right:-55px;width:150px;height:150px;border-radius:50%;background:rgba(239,199,111,.08)}
+      .product-panel .section-head{position:relative;z-index:1;margin-bottom:16px}
+      .product-panel .section-head h2{font-size:28px}
+      .product-panel .section-head p{color:var(--gold2);font:600 17px/1.4 "Halant",serif}
+      .product-img {
+        position:relative;
+        width:100%;
+        height:240px;
+        margin:0 auto 17px;
+        border-radius:18px 70px 18px 70px;
+        overflow: hidden;
+        border:3px solid var(--gold2);
+        box-shadow:0 14px 28px rgba(0,0,0,.22);
+        background: #fff;
+      }
+      .product-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .product-intro{margin:0 auto 17px;color:#dce6de;font-size:16px;line-height:1.55;text-align:left}
+      .product-purpose{display:block;margin-bottom:10px;color:var(--gold2);font-size:16px;text-align:left}
+      .product-benefits{display:grid;grid-template-columns:1fr 1fr;gap:9px;list-style:none;text-align:left}
+      .product-benefits li{position:relative;min-height:106px;padding:39px 11px 11px;border:1px solid rgba(239,199,111,.24);border-radius:14px;background:rgba(255,255,255,.075);color:#e5eee7;font-size:16px;line-height:1.38}
+      .product-benefits li:before{content:"✓";position:absolute;left:11px;top:10px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:var(--gold2);color:var(--green);font-size:16px;font-weight:800}
+      .product-routine{margin-top:17px;padding:13px 10px;border-top:1px solid rgba(239,199,111,.25);border-bottom:1px solid rgba(239,199,111,.25);color:#fff;font:700 18px/1.35 "Halant",serif}
+      .product-learn{margin-top:15px;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:var(--clay);color:#fff;font-size:14px;font-weight:800;box-shadow:0 9px 20px rgba(0,0,0,.22)}
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+        margin-top: 15px;
+      }
+      .pill {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: var(--sage);
+        color: var(--green);
+      }
+      .guidance-cards{display:grid;gap:16px;margin:0 auto;max-width:430px}
+      .guidance-card{position:relative;overflow:hidden;border:1px solid rgba(18,55,42,.14);border-radius:20px;background:#fff;box-shadow:0 12px 28px rgba(25,42,31,.11);transition:transform .2s ease,box-shadow .2s ease}
+      .guidance-card-image{position:relative;width:100%;aspect-ratio:3/2;overflow:hidden;background:var(--sage)}
+      .guidance-card-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+      .guidance-card-footer{position:relative;display:flex;align-items:center;justify-content:center;min-height:66px;padding:12px 16px;background:var(--green);color:#fff;text-align:center}
+      .guidance-card-footer h3{margin:0;color:#fff;font-family:"Hind",sans-serif;font-size:18px;line-height:1.25}
+      @media (hover:hover){.guidance-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(25,42,31,.16)}}
+
+      .before-after{
+        display:grid;
+        gap:16px;
+      }
+      .ba-card{
+        overflow:hidden;
+        border:1px solid var(--line);
+        border-radius:18px;
+        background:#fff;
+        box-shadow:var(--shadow);
+      }
+      .ba-title{
+        padding:11px 14px;
+        text-align:center;
+        background:var(--green);
+        color:var(--gold2);
+        font-weight:700;
+        font-size:16px;
+      }
+      .ba-images{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+        padding:10px;
+        background:#f7f2e7;
+      }
+      .ba-image{
+        position:relative;
+        overflow:hidden;
+        aspect-ratio:1/1;
+        border-radius:13px;
+        border:1px solid var(--line);
+        background:#eee;
+      }
+      .ba-image img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center;
+      }
+      .ba-label{
+        position:absolute;
+        left:8px;
+        bottom:8px;
+        padding:5px 9px;
+        border-radius:999px;
+        color:#fff;
+        font-size:10px;
+        font-weight:800;
+        letter-spacing:.5px;
+        box-shadow:0 4px 10px rgba(0,0,0,.18);
+      }
+      .ba-before .ba-label{background:#8b4a35}
+      .ba-after .ba-label{background:var(--green2)}
+      .ba-info{
+        padding:12px 14px 14px;
+        text-align:center;
+      }
+      .ba-info strong{
+        display:block;
+        color:var(--green);
+        font-size:17px;
+        margin-bottom:3px;
+      }
+      .ba-info p{
+        color:var(--muted);
+        font-size:16px;
+        line-height:1.45;
+      }
+
+      .stories {
+        display: grid;
+        gap: 12px;
+      }
+      .story {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(239, 199, 111, 0.25);
+      }
+      .story-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+      .avatar {
+        width: 80px;
+        height: 80px;
+        flex: 0 0 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: var(--gold2);
+        border: 3px solid var(--gold2);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+      }
+      .story strong {
+        font-size: 17px;
+        color: #fff;
+      }
+      .story small {
+        display: block;
+        color: #cbd9cf;
+      }
+      .story p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #e4ebe5;
+      }
+      .herbs {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 12px;
+      }
+      .herb {
+        overflow: hidden;
+        border-radius: 18px;
+        background: #fff;
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+      }
+      .herb-img {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background: #edf3e9;
+      }
+      .herb-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
+      .herb-content {
+        padding: 12px 10px 14px;
+        text-align: center;
+      }
+      .herb h3 {
+        font-size: 19px;
+        color: var(--green);
+        margin-bottom: 4px;
+      }
+      .herb p {
+        font-size: 16px;
+        line-height: 1.45;
+        color: var(--muted);
+      }
+      .offer {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(160deg, #173c2d, #0d281e);
+        color: #fff;
+      }
+      .offer:before, .offer:after {
+        content: ""; position:absolute; border-radius:50%; pointer-events:none;
+        background:rgba(239,199,111,.09); animation:offerFloat 5s ease-in-out infinite;
+      }
+      .offer:before { width:150px;height:150px;top:-65px;right:-45px; }
+      .offer:after { width:105px;height:105px;bottom:-42px;left:-35px;animation-delay:-2.2s; }
+      .offer-box {
+        position:relative; z-index:1;
+        border: 1px solid rgba(239, 199, 111, 0.48);
+        border-radius: 22px; padding: 22px 16px;
+        background: rgba(255, 255, 255, 0.065); text-align: center;
+        box-shadow:0 18px 38px rgba(0,0,0,.18);
+      }
+      .offer-box .kicker{animation:offerFade .7s ease both}
+      .offer-box h2{animation:offerFade .7s .08s ease both}
+      .discount {
+        display:inline-block; font:700 44px/1 "Halant",serif; color:var(--gold2);
+        margin:12px 0 17px; padding:8px 17px 5px; position:relative;
+        animation:offerPulse 2.1s ease-in-out infinite;
+      }
+      .discount:after{content:"";position:absolute;left:10%;right:10%;bottom:0;height:3px;border-radius:99px;background:var(--gold);}
+      .offer-notes{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:4px 0 18px;text-align:left}
+      .offer-note{
+        position:relative; min-height:92px; padding:14px 12px 12px; border-radius:4px 4px 12px 4px;
+        background:#fff4bd; color:#173c2d; box-shadow:0 9px 18px rgba(0,0,0,.18);
+        transform:rotate(-1.6deg); animation:noteIn .55s ease both;
+      }
+      .offer-note:nth-child(even){background:#e6f0d9;transform:rotate(1.5deg)}
+      .offer-note:nth-child(3){transform:rotate(1deg)} .offer-note:nth-child(4){transform:rotate(-1deg)}
+      .offer-note:nth-child(2){animation-delay:.08s}.offer-note:nth-child(3){animation-delay:.16s}.offer-note:nth-child(4){animation-delay:.24s}.offer-note:nth-child(5){animation-delay:.32s}.offer-note:nth-child(6){animation-delay:.40s}
+      .offer-note:before{content:"";position:absolute;width:34px;height:9px;top:-5px;left:50%;transform:translateX(-50%) rotate(-2deg);background:rgba(239,199,111,.72);box-shadow:0 2px 4px rgba(0,0,0,.08)}
+      .offer-note i{display:block;font-size:20px;color:var(--green2);margin-bottom:7px}
+      .offer-note strong{display:block;font-size:14px;line-height:1.25}
+      .offer-note small{display:block;margin-top:3px;font-size:11px;line-height:1.25;color:#5e624e}
+      .offer .pill-row{margin-top:2px}.offer .cta{animation:ctaGlow 1.8s ease-in-out infinite}
+      @keyframes offerFade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+      @keyframes noteIn{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1}}
+      @keyframes offerPulse{50%{transform:scale(1.055)}}
+      @keyframes ctaGlow{50%{box-shadow:0 10px 28px rgba(239,199,111,.42)}}
+      @keyframes offerFloat{50%{transform:translateY(12px) scale(1.08)}}
+      @media (prefers-reduced-motion:reduce){.offer *,.offer:before,.offer:after{animation:none!important}}
+      .order {
+        background: var(--green);
+        color: #fff;
+      }
+      .form-card {
+        background: #fff;
+        border: 2px solid var(--gold);
+        border-radius: 22px;
+        padding: 24px 18px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+      .field {
+        margin-bottom: 14px;
+      }
+      .field label {
+        display: block;
+        color: var(--green);
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      .field input {
+        width: 100%;
+        height: 48px;
+        border: 1.5px solid var(--line);
+        border-radius: 11px;
+        padding: 0 13px;
+        background: #fffdf7;
+        outline: none;
+      }
+      .field input:focus {
+        border-color: var(--gold);
+      }
+      .err {
+        display: none;
+        font-size: 11px;
+        color: #b3261e;
+        margin-top: 4px;
+      }
+      .err.show {
+        display: block;
+      }
+      .submit {
+        width: 100%;
+        border: 0;
+        border-radius: 12px;
+        background: var(--clay);
+        color: #fff;
+        padding: 14px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .secure {
+        text-align: center;
+        color: var(--muted);
+        font-size: 11px;
+        margin-top: 11px;
+      }
+      .faq-list {
+        display: grid;
+        gap: 9px;
+      }
+      .faq {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: #fff;
+        overflow: hidden;
+      }
+      .faq button {
+        width: 100%;
+        border: 0;
+        background: #fff;
+        padding: 14px;
+        text-align: left;
+        font-weight: 700;
+        color: var(--green);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        cursor: pointer;
+      }
+      .faq .answer {
+        display: none;
+        padding: 0 14px 14px;
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+      .faq.open .answer {
+        display: block;
+      }
+      .disclaimer {
+        padding: 18px 20px 8px;
+        background: #fbf7ec;
+        text-align: center;
+        font-size: 8px;
+        line-height: 1.5;
+        color: #6d665a;
+        opacity: 0.62;
+      }
+      .policy-links {
+        padding: 4px 6px 10px;
+        background: #fbf7ec;
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        flex-wrap: nowrap;
+      }
+      .policy-links button {
+        border: 0;
+        background: none;
+        font-size: 6.3px;
+        color: #466a57;
+        opacity: 0.65;
+        padding: 2px;
+        white-space: nowrap;
+      }
+      .sticky {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 115%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: transform 0.38s cubic-bezier(.22,.61,.36,1), opacity 0.28s ease, visibility 0.38s;
+        will-change: transform, opacity;
+        width: 100%;
+        max-width: var(--w);
+        z-index: 80;
+        padding: 10px 14px;
+        background: #fff;
+        border-top: 1px solid var(--line);
+        box-shadow: 0 -8px 22px rgba(0, 0, 0, 0.12);
+      }
+      .sticky.show {
+        transform: translate(-50%, 0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+      .sticky a {
+        display: block;
+        background: var(--clay);
+        color: #fff;
+        text-align: center;
+        padding: 12px;
+        border-radius: 11px;
+        font-weight: 700;
+      }
+      .loading {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: rgba(18, 55, 42, 0.5);
+        z-index: 300;
+      }
+      .loading.show {
+        display: flex;
+      }
+      .loading-box {
+        background: #fff;
+        border-radius: 16px;
+        padding: 22px 28px;
+        text-align: center;
+      }
+      .spinner {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 10px;
+        border: 4px solid var(--line);
+        border-top-color: var(--green2);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .pp-overlay {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100dvh;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px;
+        background: rgba(13, 36, 27, 0.62);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .pp-overlay.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+      .pp-modal {
+        width: min(420px, calc(100vw - 28px));
+        max-height: 72dvh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        touch-action: pan-y;
+        -webkit-overflow-scrolling: touch;
+        background: #fff;
+        border-radius: 18px;
+        padding: 22px 17px;
+        position: relative;
+      }
+      .pp-close {
+        position: sticky;
+        top: 0;
+        float: right;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        border-radius: 50%;
+        background: #e4eee8;
+        color: var(--green);
+        cursor: pointer;
+      }
+      .pp-title {
+        font:
+          700 21px "Halant",
+          serif;
+        color: var(--green);
+        margin: 2px 38px 8px 0;
+      }
+      .pp-badge {
+        display: inline-block;
+        background: #e4eee8;
+        color: var(--green);
+        font-size: 10px;
+        border-radius: 999px;
+        padding: 3px 9px;
+        margin-bottom: 10px;
+      }
+      .pp-modal p,
+      .pp-modal li {
+        font-size: 13px;
+        line-height: 1.65;
+        color: #4d504c;
+      }
+      .pp-modal ul {
+        padding-left: 18px;
+        margin: 8px 0;
+      }
+      .pp-note {
+        background: #edf4ef;
+        border-left: 3px solid var(--leaf);
+        padding: 9px 10px;
+        border-radius: 0 8px 8px 0;
+        margin: 10px 0;
+      }
+      @media (max-width: 360px) {
+        section {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .herbs {
+          grid-template-columns: 1fr;
+        }
+        .policy-links button {
+          font-size: 5.6px;
+        }
+      }
+
+      .emotional-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 16px;
+      }
+      .emotional-card {
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+      .emotional-card img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+      }
+      .emotional-card h3 {
+        min-height: 72px;
+        padding: 12px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--green);
+        font-size: 16px;
+        line-height: 1.3;
+      }
+
+      /* How It Works — alternating image timeline */
+      .how-intro{margin:-8px auto 22px;color:#dce6de;font-size:16px;line-height:1.55;text-align:center}
+      .how-flow{position:relative;display:grid;gap:22px;max-width:410px;margin:0 auto}
+      .how-flow:before{content:"";position:absolute;left:50%;top:62px;bottom:62px;width:2px;background:repeating-linear-gradient(to bottom,var(--gold2) 0 5px,transparent 5px 10px);transform:translateX(-50%);opacity:.75}
+      .how-step{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);align-items:center;min-height:150px}
+      .how-node{position:relative;z-index:3;grid-column:2;width:28px;height:28px;margin:auto;display:grid;place-items:center;border:3px solid var(--green);border-radius:50%;background:var(--gold2);color:var(--green);font-size:9px;font-weight:800;box-shadow:0 0 0 2px var(--gold2)}
+      .how-card-img{grid-column:1;grid-row:1;width:100%;height:165px;overflow:hidden;border:2px solid var(--gold2);border-radius:12px;background:var(--sage);box-shadow:0 9px 20px rgba(0,0,0,.2);transform:rotate(-1deg)}
+      .how-card-img img{width:100%;height:100%;object-fit:cover;object-position:center}
+      .how-card-body{grid-column:3;grid-row:1;width:100%;height:max-content;padding:9px 10px;display:flex;align-items:center;border:1px solid rgba(239,199,111,.27);border-radius:11px;background:rgba(255,255,255,.075);box-shadow:0 8px 18px rgba(0,0,0,.13)}
+      .how-step:nth-child(even) .how-card-img{grid-column:3;transform:rotate(1deg)}
+      .how-step:nth-child(even) .how-card-body{grid-column:1;text-align:left}
+      .how-card-body h3{width:100%;color:#ffffff;font-family:"Hind",sans-serif;font-size:16px;line-height:1.35;margin:0}
+      .how-card-body p{color:#dce6de;font-size:12px;line-height:1.48}
+      .how-card-body strong{color:#fff}
+      @media(max-width:360px){.how-step{grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);min-height:138px}.how-node{width:24px;height:24px}.how-card-img{height:100px}.how-card-body{padding:10px 8px}.how-card-body h3{font-size:13px}}
+    
+      /* How To Use — circular visual process */
+      .use-flow{
+        position:relative;
+        display:grid;
+        gap:18px;
+        width:100%;
+        max-width:410px;
+        margin:0 auto;
+      }
+      .use-flow:before{
+        content:"";
+        position:absolute;
+        left:68px;
+        top:70px;
+        bottom:70px;
+        width:3px;
+        background:linear-gradient(var(--gold2),rgba(239,199,111,.25));
+        border-radius:999px;
+      }
+      .use-step{
+        position:relative;
+        display:grid;
+        grid-template-columns:140px minmax(0,1fr);
+        gap:12px;
+        align-items:center;
+      }
+      .use-img{
+        position:relative;
+        z-index:2;
+        width:140px;
+        height:140px;
+        border-radius:50%;
+        overflow:hidden;
+        border:4px solid var(--gold2);
+        background:#fff;
+        box-shadow:0 8px 18px rgba(0,0,0,.22);
+      }
+      .use-img img{
+        width:100%;
+        height:100%;
+        display:block;
+        object-fit:cover;
+        object-position:center;
+      }
+      .use-num{
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        width:27px;
+        height:27px;
+        display:grid;
+        place-items:center;
+        border-radius:50%;
+        background:var(--gold);
+        color:var(--green);
+        border:2px solid var(--green);
+        font-size:10px;
+        font-weight:800;
+      }
+      .use-body{
+        width:100%;
+        min-width:0;
+        padding:11px 12px;
+        border:1px solid rgba(239,199,111,.28);
+        border-radius:14px;
+        background:rgba(255,255,255,.07);
+      }
+      .use-body h3{
+        color:var(--gold2);
+        font-size:17px;
+        margin-bottom:3px;
+      }
+      .use-body p{
+        color:#dce6de;
+        font-size:16px;
+        line-height:1.5;
+      }
+
+      /* Quality & Trust — simple 2 × 2 circular cards */
+      .trust-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px;max-width:390px;margin:0 auto}
+      .trust-card{aspect-ratio:1;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:8px;background:#fff;border:2px solid var(--gold2);border-radius:50%;box-shadow:0 9px 22px rgba(25,42,31,.12)}
+      .trust-image{width:100%;height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#fff}
+      .trust-image img{width:100%;height:100%;display:block;object-fit:contain;object-position:center;padding:6px;border-radius:50%}
+      @media(max-width:360px){.trust-grid{gap:12px 8px}.trust-card{padding:7px}}
+
+      /* Problem section — visual symptom cards */
+      .problem-intro{max-width:390px;margin:0 auto 20px;text-align:center;color:var(--muted);font-size:16px;line-height:1.65}
+      .problem-subtitle{font-family:"Halant",serif;color:#fff;font-size:20px;line-height:1.3;text-align:center;margin:24px auto 20px;padding:9px 16px;border-radius:999px;background:var(--green);box-shadow:0 8px 20px rgba(18,55,42,.16)}
+      .problem-cards{position:relative;display:grid;gap:22px;max-width:405px;margin:0 auto;padding:4px 0}
+      .problem-cards:before{content:"";position:absolute;left:33px;top:38px;bottom:38px;width:2px;background:var(--green);opacity:.9}
+      .problem-card{--road-accent:var(--green);position:relative;display:grid;grid-template-columns:68px minmax(0,1fr);gap:14px;align-items:center;min-height:200px}
+      .problem-card:before{content:"";position:absolute;z-index:0;left:33px;top:50%;width:52px;height:2px;background:var(--green);transform:translateY(-50%)}
+      .problem-road-marker{position:relative;z-index:2;width:68px;height:68px;display:grid;place-items:center}
+      .problem-road-marker:before{content:"";position:absolute;inset:0;background:var(--road-accent);clip-path:polygon(28% 0,72% 0,100% 50%,72% 100%,28% 100%,43% 78%,82% 78%,96% 50%,82% 22%,43% 22%)}
+      .problem-card-number{position:relative;z-index:1;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:#fff;border:4px solid var(--cream);font:800 21px/1 "Hind",sans-serif;box-shadow:0 4px 10px rgba(18,55,42,.18)}
+      .problem-card-body{position:relative;z-index:1;min-width:0;height:200px;padding:35px 8px 8px;border:2px solid var(--road-accent);border-radius:15px;background:#fff;overflow:hidden;box-shadow:0 7px 18px rgba(25,42,31,.08)}
+      .problem-card-body h3{position:absolute;z-index:2;left:-2px;top:-2px;max-width:calc(100% - 18px);min-width:74%;padding:8px 12px 7px;border-radius:15px 15px 15px 0;background:var(--road-accent);color:#fff;font-family:"Hind",sans-serif;font-size:15px;line-height:1.25;font-weight:700}
+      .problem-card-image{width:100%;height:100%;overflow:hidden;border-radius:8px;background:#edf3e9}
+      .problem-card-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+      @media(max-width:360px){.problem-cards{gap:18px}.problem-card{grid-template-columns:60px minmax(0,1fr);gap:10px;min-height:118px}.problem-cards:before{left:29px}.problem-card:before{left:29px;width:42px}.problem-road-marker{width:60px;height:60px}.problem-card-number{width:46px;height:46px;font-size:19px}.problem-card-body{height:118px}.problem-card-body h3{font-size:14px;padding-left:10px;padding-right:10px}}
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <div class="brand">
+          <i class="fa-solid fa-leaf"></i> GathHeal<small
+            >AYURVEDIC WELLNESS SUPPORT</small
+          >
+        </div>
+        <a href="#order-form"><i class="fa-solid fa-phone"></i> सलाह लें</a>
+      </header>
+
+      <div class="banner">
+        <img
+          src="images/banner.avif"
+          alt="GathHeal गांठ समस्या जागरूकता banner"
+          width="1080"
+          height="1920"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </div>
+
+      <section class="light" id="problem-section">
+        <div class="section-head">
+          <div class="kicker">Problem</div>
+          <h2>गांठ को सिर्फ एक छोटा-सा उभार समझकर न छोड़ें</h2>
+        </div>
+        <p class="problem-intro">
+          शरीर में गांठ कई अलग-अलग कारणों से हो सकती है। कुछ गांठें सामान्य और benign हो सकती हैं, जबकि कुछ गांठों में proper medical evaluation की आवश्यकता हो सकती है।
+        </p>
+        <h3 class="problem-subtitle">गांठ के साथ आपको क्या महसूस हो सकता है?</h3>
+        <div class="problem-cards">
+          <article class="problem-card"><div class="problem-road-marker"><span class="problem-card-number">01</span></div><div class="problem-card-body"><h3>शरीर पर दिखाई देने वाला उभार</h3><div class="problem-card-image"><img src="images/problem1.avif" alt="शरीर पर दिखाई देने वाला उभार" loading="lazy" decoding="async"></div></div></article>
+          <article class="problem-card"><div class="problem-road-marker"><span class="problem-card-number">02</span></div><div class="problem-card-body"><h3>धीरे-धीरे आकार बढ़ना</h3><div class="problem-card-image"><img src="images/problem2.avif" alt="धीरे-धीरे आकार बढ़ना" loading="lazy" decoding="async"></div></div></article>
+          <article class="problem-card"><div class="problem-road-marker"><span class="problem-card-number">03</span></div><div class="problem-card-body"><h3>गांठ वाली जगह पर भारीपन</h3><div class="problem-card-image"><img src="images/problem3.avif" alt="गांठ वाली जगह पर भारीपन" loading="lazy" decoding="async"></div></div></article>
+          <article class="problem-card"><div class="problem-road-marker"><span class="problem-card-number">04</span></div><div class="problem-card-body"><h3>आसपास pressure या discomfort</h3><div class="problem-card-image"><img src="images/problem4.avif" alt="आसपास pressure या discomfort" loading="lazy" decoding="async"></div></div></article>
+          <article class="problem-card"><div class="problem-road-marker"><span class="problem-card-number">05</span></div><div class="problem-card-body"><h3>कपड़े पहनने या movement में परेशानी</h3><div class="problem-card-image"><img src="images/problem5.avif" alt="कपड़े पहनने या movement में परेशानी" loading="lazy" decoding="async"></div></div></article>
+          <article class="problem-card"><div class="problem-road-marker"><span class="problem-card-number">06</span></div><div class="problem-card-body"><h3>appearance को लेकर चिंता</h3><div class="problem-card-image"><img src="images/problem6.avif" alt="appearance को लेकर चिंता" loading="lazy" decoding="async"></div></div></article>
+          </div>
+      </section>
+
+      <section class="soft">
+        <div class="quote-box">
+          <p>
+            गांठ शरीर पर होती है… <strong>लेकिन चिंता मन में रहती है।</strong>
+          </p>
+        </div>
+        <div class="emotional-cards">
+          <article class="emotional-card">
+            <img
+              src="images/emotional1.avif"
+              alt="लोग क्या सोचेंगे - emotional concern"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3>“लोग क्या सोचेंगे?”</h3>
+          </article>
+          <article class="emotional-card">
+            <img
+              src="images/emotional2.avif"
+              alt="गांठ और बड़ी होने की चिंता"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3>“क्या ये और बड़ी होगी?”</h3>
+          </article>
+          <article class="emotional-card">
+            <img
+              src="images/emotional3.avif"
+              alt="गांठ हमेशा रहने की चिंता"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3>“क्या इसे हमेशा ऐसे ही ढकना पड़ेगा?”</h3>
+          </article>
+          <article class="emotional-card">
+            <img
+              src="images/emotional4.avif"
+              alt="आसान विकल्प की तलाश"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3>“क्या कोई आसान रास्ता है?”</h3>
+          </article>
+        </div>
+        <p
+          style="
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--muted);
+            text-align: center;
+          "
+        >
+          GathHeal को एक आसान Ayurvedic herbal wellness routine के रूप में तैयार
+          किया गया है, ताकि daily routine में herbal support के साथ professional
+          guidance भी मिल सके।
+        </p>
+      </section>
+
+      <section class="dark product-wrap">
+        <div class="product-panel">
+          <div class="section-head">
+            <div class="kicker">Product Introduction</div>
+            <h2>मिलिए GathHeal Capsules से</h2>
+            <p>Traditional Ayurveda + Daily Herbal Support</p>
+          </div>
+          <div class="product-img">
+            <img src="images/capsule.webp" alt="GathHeal Capsules" loading="lazy" decoding="async" />
+          </div>
+          <p class="product-intro">GathHeal Capsules चुनिंदा Ayurvedic herbs के combination से तैयार किया गया herbal formulation है।</p>
+          <strong class="product-purpose">इसका उद्देश्य:</strong>
+          <ul class="product-benefits">
+            <li>Healthy tissue wellness को support करना</li>
+            <li>Overall body wellness को support करना</li>
+            <li>Daily herbal routine में सहायता करना</li>
+            <li>Regular monitoring और guidance support करना</li>
+          </ul>
+          <p class="product-routine">एक आसान capsule. एक consistent daily routine.</p>
+          <a class="product-learn" href="#how-it-works">GATHHEAL के बारे में जानें <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+      </section>
+
+      <section id="how-it-works"
+        class="dark"
+        style="border-top: 1px solid rgba(239, 199, 111, 0.3)"
+      >
+        <div class="section-head">
+          <div class="kicker">How It Works</div>
+          <h2>GathHeal शरीर को कैसे Support करता है?</h2>
+        </div>
+        <p class="how-intro">GathHeal का formulation traditional Ayurvedic herbal ingredients पर आधारित है।</p>
+        <div class="how-flow">
+          <article class="how-step"><div class="how-card-img"><img src="images/work1.avif" alt="शरीर की प्राकृतिक सफाई support" loading="lazy" decoding="async" /></div><span class="how-node">01</span><div class="how-card-body"><h3>शरीर की प्राकृतिक सफाई को Support करता है</h3></div></article>
+          <article class="how-step"><div class="how-card-img"><img src="images/work2.avif" alt="गांठ की देखभाल support" loading="lazy" decoding="async" /></div><span class="how-node">02</span><div class="how-card-body"><h3>गांठ की देखभाल को Support करता है</h3></div></article>
+          <article class="how-step"><div class="how-card-img"><img src="images/work3.avif" alt="सूजन और असहजता support" loading="lazy" decoding="async" /></div><span class="how-node">03</span><div class="how-card-body"><h3>सूजन और असहजता में Support करता है</h3></div></article>
+          <article class="how-step"><div class="how-card-img"><img src="images/work4.avif" alt="स्वस्थ रक्त संचार support" loading="lazy" decoding="async" /></div><span class="how-node">04</span><div class="how-card-body"><h3>स्वस्थ रक्त संचार को Support करता है</h3></div></article>
+          <article class="how-step"><div class="how-card-img"><img src="images/work5.avif" alt="long-term body care support" loading="lazy" decoding="async" /></div><span class="how-node">05</span><div class="how-card-body"><h3>दोबारा होने वाली परेशानी की Care को Support करता है</h3></div></article>
+        </div>
+      </section>
+
+      <section class="soft">
+        <div class="section-head">
+          <div class="kicker">Guidance</div>
+          <h2>👨‍⚕️ सिर्फ Product नहीं — Guidance भी जरूरी है</h2>
+          <p>गांठ के मामले में हर व्यक्ति की स्थिति अलग हो सकती है।</p>
+        </div>
+        <div class="guidance-cards">
+          <article class="guidance-card">
+            <div class="guidance-card-image"><img src="images/guide1.avif" alt="Doctor से व्यक्तिगत guidance" loading="lazy" decoding="async" /></div>
+            <footer class="guidance-card-footer"><h3>Doctor Guidance</h3></footer>
+          </article>
+          <article class="guidance-card">
+            <div class="guidance-card-image"><img src="images/guide2.avif" onerror="this.onerror=null;this.src='images/guide1.avif'" alt="Progress की weekly monitoring" loading="lazy" decoding="async" /></div>
+            <footer class="guidance-card-footer"><h3>Weekly Monitoring</h3></footer>
+          </article>
+          <article class="guidance-card">
+            <div class="guidance-card-image"><img src="images/guide3.avif" onerror="this.onerror=null;this.src='images/guide1.avif'" alt="व्यक्तिगत diet chart" loading="lazy" decoding="async" /></div>
+            <footer class="guidance-card-footer"><h3>Personalized Diet Chart</h3></footer>
+          </article>
+          <article class="guidance-card">
+            <div class="guidance-card-image"><img src="images/guide4.avif" onerror="this.onerror=null;this.src='images/guide1.avif'" alt="Customer support सहायता" loading="lazy" decoding="async" /></div>
+            <footer class="guidance-card-footer"><h3>Customer Support</h3></footer>
+          </article>
+        </div>
+        <a class="cta" href="#order-form" style="display: flex">GET GUIDANCE</a>
+      </section>
+
+      <section class="light">
+        <div class="section-head">
+          <div class="kicker">Before & After</div>
+          <h2>क्या बदलाव देखने को मिल सकता है?</h2>
+          <p>
+            हर व्यक्ति का response अलग हो सकता है। Before/after केवल real और
+            documented customer results के आधार पर दिखाएँ।
+          </p>
+        </div>
+        <div class="before-after">
+          <article class="ba-card">
+            <div class="ba-title">Example 01 — Visible Lump</div>
+            <div class="ba-images">
+              <div class="ba-image ba-before">
+                <img src="images/before1.avif" alt="Before - visible lump example" loading="lazy" decoding="async" />
+                <span class="ba-label">BEFORE</span>
+              </div>
+              <div class="ba-image ba-after">
+                <img src="images/after1.avif" alt="After - visible lump follow-up example" loading="lazy" decoding="async" />
+                <span class="ba-label">AFTER</span>
+              </div>
+            </div>
+            <div class="ba-info">
+              <strong>Visible Appearance Comparison</strong>
+              <p>Left side पर initial condition और right side पर documented follow-up image दिखाएँ।</p>
+            </div>
+          </article>
+
+          <article class="ba-card">
+            <div class="ba-title">Example 02 — Daily Discomfort</div>
+            <div class="ba-images">
+              <div class="ba-image ba-before">
+                <img src="images/before2.avif" alt="Before - discomfort example" loading="lazy" decoding="async" />
+                <span class="ba-label">BEFORE</span>
+              </div>
+              <div class="ba-image ba-after">
+                <img src="images/after2.avif" alt="After - discomfort follow-up example" loading="lazy" decoding="async" />
+                <span class="ba-label">AFTER</span>
+              </div>
+            </div>
+            <div class="ba-info">
+              <strong>Progress Follow-up</strong>
+              <p>Same angle, similar lighting और clear date-based documentation conversion trust को बेहतर बनाती है।</p>
+            </div>
+          </article>
+
+          <article class="ba-card">
+            <div class="ba-title">Example 03 — Long-Term Lump</div>
+            <div class="ba-images">
+              <div class="ba-image ba-before">
+                <img src="images/before3.avif" alt="Before - long-term lump example" loading="lazy" decoding="async" />
+                <span class="ba-label">BEFORE</span>
+              </div>
+              <div class="ba-image ba-after">
+                <img src="images/after3.avif" alt="After - long-term lump follow-up example" loading="lazy" decoding="async" />
+                <span class="ba-label">AFTER</span>
+              </div>
+            </div>
+            <div class="ba-info">
+              <strong>Documented Comparison</strong>
+              <p>Only genuine customer images with consent और authentic documentation use करें।</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="light">
+        <div class="section-head">
+          <div class="kicker">Key Ingredients</div>
+          <h2>🌿 GathHeal में प्रकृति के चुनिंदा Herbs</h2>
+        </div>
+        <div class="herbs">
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing1.avif" alt="Kalmegh herb" loading="lazy" decoding="async" /></div>
+            <div class="herb-content">
+              <h3>Kalmegh</h3>
+              <p>Traditional Ayurvedic practices में उपयोग की जाने वाली botanical herb।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing2.avif" alt="Chirchita herb" loading="lazy" decoding="async" /></div>
+            <div class="herb-content">
+              <h3>Chirchita</h3>
+              <p>Ayurvedic herbal preparations में traditional use वाली botanical ingredient।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing3.avif" alt="Pashanbhed herb" loading="lazy" decoding="async" /></div>
+            <div class="herb-content">
+              <h3>Pashanbhed</h3>
+              <p>Traditional herbal formulations में उपयोग किया जाने वाला botanical ingredient।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing4.avif" alt="Makoi Leaf herb" loading="lazy" decoding="async" /></div>
+            <div class="herb-content">
+              <h3>Makoi Leaf</h3>
+              <p>Traditional Ayurvedic practice में उपयोग की जाने वाली herbal ingredient।</p>
+            </div>
+          </article>
+        </div>
+        <div class="quote-box" style="margin-top: 16px">
+          <p><strong>4 Selected Herbs.</strong> 1 Easy Daily Routine.</p>
+        </div>
+      </section>
+
+      <section class="dark">
+        <div class="section-head">
+          <div class="kicker">How To Use</div>
+          <h2>GathHeal को Daily Routine में कैसे शामिल करें?</h2>
+          <p>एक आसान step-by-step wellness routine</p>
+        </div>
+
+        <div class="use-flow">
+          <div class="use-step">
+            <div class="use-img">
+              <img src="images/use1.avif" alt="Health history और consultation" loading="lazy" decoding="async" />
+            </div>
+            <div class="use-body">
+              <h3>अपनी जानकारी Share करें</h3>
+              <p>अपनी गांठ और health history के बारे में सही जानकारी दें।</p>
+            </div>
+          </div>
+
+          <div class="use-step">
+            <div class="use-img">
+              <img src="images/use2.avif" alt="Recommended dosage follow करें" loading="lazy" decoding="async" />
+            </div>
+            <div class="use-body">
+              <h3>Recommended Dosage</h3>
+              <p>Product label या qualified practitioner द्वारा recommended dosage follow करें।</p>
+            </div>
+          </div>
+
+          <div class="use-step">
+            <div class="use-img">
+              <img src="images/use3.avif" alt="Consistent daily routine" loading="lazy" decoding="async" />
+            </div>
+            <div class="use-body">
+              <h3>Daily Routine बनाएँ</h3>
+              <p>GathHeal को recommended daily routine में consistently शामिल करें।</p>
+            </div>
+          </div>
+
+          <div class="use-step">
+            <div class="use-img">
+              <img src="images/use4.avif" alt="Diet और lifestyle guidance" loading="lazy" decoding="async" />
+            </div>
+            <div class="use-body">
+              <h3>Diet & Lifestyle</h3>
+              <p>Personalized diet और lifestyle guidance follow करें।</p>
+            </div>
+          </div>
+
+          <div class="use-step">
+            <div class="use-img">
+              <img src="images/use5.avif" alt="Weekly progress monitoring" loading="lazy" decoding="async" />
+            </div>
+            <div class="use-body">
+              <h3>Progress Monitor करें</h3>
+              <p>Weekly monitoring के दौरान अपनी progress share करें।</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="soft">
+        <div class="section-head">
+          <div class="kicker">Quality & Trust</div>
+          <h2>🛡️ Certified Quality You Can Trust</h2>
+          <p>हमारे quality standards और valid certifications को देखें।</p>
+        </div>
+        <div class="trust-grid">
+          <article class="trust-card"><div class="trust-image"><img src="images/cert1.jpg" alt="GMP Certificate" loading="lazy" decoding="async" /></div></article>
+          <article class="trust-card"><div class="trust-image"><img src="images/cert2.jpg" alt="ISO Certificate" loading="lazy" decoding="async" /></div></article>
+          <article class="trust-card"><div class="trust-image"><img src="images/cert3.jpg" alt="Regulatory Licence" loading="lazy" decoding="async" /></div></article>
+          <article class="trust-card"><div class="trust-image"><img src="images/cert4.jpg" alt="Quality Testing Certificate" loading="lazy" decoding="async" /></div></article>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="offer-box">
+          <div class="kicker">GathHeal Special Offer</div>
+          <h2>आज से अपनी Ayurvedic Wellness Journey शुरू करें</h2>
+          <div class="discount">SAVE 10%</div>
+          <div class="offer-notes">
+            <div class="offer-note"><i class="fa-solid fa-tags"></i><strong>10% OFF</strong><small>Special Offer</small></div>
+            <div class="offer-note"><i class="fa-solid fa-truck-fast"></i><strong>Cash on Delivery</strong><small>COD Available</small></div>
+            <div class="offer-note"><i class="fa-solid fa-user-doctor"></i><strong>Doctor Guidance</strong><small>Monitoring & Support</small></div>
+            <div class="offer-note"><i class="fa-solid fa-calendar-check"></i><strong>Weekly Monitoring</strong><small>Regular Follow-up</small></div>
+            <div class="offer-note"><i class="fa-solid fa-clipboard-list"></i><strong>Personalized Diet</strong><small>Diet Chart Support</small></div>
+            <div class="offer-note"><i class="fa-solid fa-headset"></i><strong>24/7 Support</strong><small>Customer Assistance</small></div>
+          </div>
+          <a class="cta" href="#order-form">आज ही Order करें</a>
+        </div>
+      </section>
+
+      <section class="order" id="order-form">
+        <div class="section-head">
+          <div class="kicker">Order Form</div>
+          <h2>🛒 GathHeal Order करें</h2>
+          <a>बस अपनी जानकारी भरें — हमारी टीम आपसे संपर्क करेगी</a>
+        </div>
+        <div class="form-card">
+          <form id="orderForm" onsubmit="return submitForm(event);">
+            <input type="hidden" name="key" value="XQP4bdtEZkt3" />
+            <input type="hidden" name="date" id="date" />
+            <input type="hidden" name="utm_source" /><input
+              type="hidden"
+              name="utm_medium"
+            /><input type="hidden" name="utm_campaign" />
+            <input type="hidden" name="utm_campaign_id" /><input
+              type="hidden"
+              name="utm_adset"
+            /><input type="hidden" name="utm_adset_id" />
+            <input type="hidden" name="utm_ad" /><input
+              type="hidden"
+              name="utm_ad_id"
+            /><input type="hidden" name="utm_placement" />
+            <input type="hidden" name="event_id" id="event_id" /><input
+              type="hidden"
+              name="fbclid"
+            /><input type="hidden" name="fbc" /><input
+              type="hidden"
+              name="fbp"
+            />
+            <div class="field">
+              <label>आपका नाम *</label
+              ><input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                pattern="[A-Za-z\u0900-\u097F ]+"
+                placeholder="अपना पूरा नाम दर्ज करें"
+              />
+              <div class="err" id="nameError">कृपया पूरा नाम दर्ज करें।</div>
+            </div>
+            <div class="field">
+              <label>मोबाइल नंबर *</label
+              ><input
+                type="tel"
+                id="phone"
+                name="phone"
+                maxlength="10"
+                inputmode="numeric"
+                autocomplete="tel"
+                pattern="[6-9][0-9]{9}"
+                required
+                placeholder="10 Digit Mobile Number"
+              />
+              <div class="err" id="phoneError">
+                कृपया सही 10 अंकों का नंबर दर्ज करें।
+              </div>
+            </div>
+            <button class="submit" id="submitBtn" type="submit">
+              GET GATHHEAL NOW
+            </button>
+            <div class="secure">
+              🔒 Your information is secure<br /><strong
+                >10% OFF | COD Available | Doctor Guidance</strong
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+
+            <section class="dark">
+        <div class="section-head">
+          <div class="kicker">Customer Stories</div>
+          <h2>⭐ GathHeal के साथ लोगों का Experience</h2>
+        </div>
+        <div class="stories">
+          <div class="story">
+            <div class="story-head">
+              <div class="avatar"><img src="images/test1.avif" alt="Rahul Sharma" loading="lazy" decoding="async" /></div>
+              <div>
+                <strong>Rahul Sharma</strong><small>Jaipur | 42 वर्ष</small>
+              </div>
+            </div>
+            <p>
+              “काफी समय से शरीर पर गांठ को लेकर परेशान था। GathHeal को daily
+              routine में शामिल किया। Regular guidance और monitoring से
+              condition को track करने में मदद मिली।”
+            </p>
+          </div>
+          <div class="story">
+            <div class="story-head">
+              <div class="avatar"><img src="images/test2.avif" alt="Priya Verma" loading="lazy" decoding="async" /></div>
+              <div>
+                <strong>Priya Verma</strong><small>Lucknow | 36 वर्ष</small>
+              </div>
+            </div>
+            <p>
+              “Appearance और discomfort को लेकर चिंता रहती थी। GathHeal के साथ
+              diet guidance और regular monitoring भी मिली।”
+            </p>
+          </div>
+          <div class="story">
+            <div class="story-head">
+              <div class="avatar"><img src="images/test3.avif" alt="Suresh Patel" loading="lazy" decoding="async" /></div>
+              <div>
+                <strong>Suresh Patel</strong><small>Ahmedabad | 51 वर्ष</small>
+              </div>
+            </div>
+            <p>
+              “Recommended routine follow किया। Weekly monitoring और support से
+              progress समझने में मदद मिली।”
+            </p>
+          </div>
+          <div class="story">
+            <div class="story-head">
+              <div class="avatar"><img src="images/test4.avif" alt="Neha Singh" loading="lazy" decoding="async" /></div>
+              <div>
+                <strong>Neha Singh</strong><small>Delhi | 39 वर्ष</small>
+              </div>
+            </div>
+            <p>
+              “Diet chart और regular guidance मिली। मेरे लिए सबसे अच्छी बात
+              लगातार support और follow-up रहा।”
+            </p>
+          </div>
+          <div class="story">
+            <div class="story-head">
+              <div class="avatar"><img src="images/test5.avif" alt="Mohan Yadav" loading="lazy" decoding="async" /></div>
+              <div>
+                <strong>Mohan Yadav</strong><small>Indore | 47 वर्ष</small>
+              </div>
+            </div>
+            <p>
+              “Consultation लेने के बाद recommended routine follow किया। Regular
+              monitoring के दौरान changes को track किया गया।”
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="light">
+        <div class="section-head">
+          <div class="kicker">FAQ</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq">
+            <button type="button">
+              GathHeal Capsules क्या हैं?<span>+</span>
+            </button>
+            <div class="answer">
+              GathHeal एक Ayurvedic herbal formulation है, जिसे selected
+              traditional herbs के combination से तैयार किया गया है।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              GathHeal में कौन-कौन से herbs हैं?<span>+</span>
+            </button>
+            <div class="answer">
+              Kalmegh, Chirchita, Pashanbhed और Makoi Leaf शामिल हैं।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              क्या GathHeal Ayurvedic formula है?<span>+</span>
+            </button>
+            <div class="answer">
+              हाँ, इसे Ayurvedic herbal ingredients के साथ तैयार formulation के
+              रूप में प्रस्तुत किया जाता है।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              GathHeal कैसे लिया जाता है?<span>+</span>
+            </button>
+            <div class="answer">
+              Product label या qualified practitioner की recommended dosage के
+              अनुसार लें।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              क्या GathHeal सभी प्रकार की गांठ के लिए suitable है?<span>+</span>
+            </button>
+            <div class="answer">
+              हर गांठ का कारण अलग हो सकता है। इसलिए proper medical evaluation
+              जरूरी हो सकता है।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              क्या Personalized Diet Chart मिलता है?<span>+</span>
+            </button>
+            <div class="answer">
+              हाँ, program के अनुसार customers को Personalized Diet Chart प्रदान
+              किया जा सकता है।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">क्या COD available है?<span>+</span></button>
+            <div class="answer">हाँ, service उपलब्ध है।</div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              क्या गांठ होने पर doctor को दिखाना चाहिए?<span>+</span>
+            </button>
+            <div class="answer">
+              हाँ। नई, तेजी से बढ़ने वाली, कठोर, दर्दनाक या लंबे समय से बनी गांठ
+              के लिए उचित medical evaluation करवाना महत्वपूर्ण है।
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="disclaimer">
+        Disclaimer: GathHeal किसी गांठ की diagnosis, emergency treatment या
+        guaranteed cure का replacement नहीं है। गांठ का कारण अलग-अलग हो सकता है
+        और किसी नई, तेजी से बढ़ने वाली, कठोर, दर्दनाक या unexplained गांठ के लिए
+        qualified healthcare professional से medical evaluation करवाना जरूरी है।
+        यह landing page herbal wellness support की जानकारी के लिए है। Individual
+        results may vary.
+      </div>
+      <div class="policy-links">
+        <button onclick="openModal('privacy')">Privacy</button
+        ><button onclick="openModal('terms')">Terms</button
+        ><button onclick="openModal('shipping')">Shipping</button
+        ><button onclick="openModal('cancel')">Cancellation</button
+        ><button onclick="openModal('contact')">Contact</button
+        ><button onclick="openModal('legal')">Legal Disclaimer</button>
+      </div>
+
+      <div class="sticky" id="order-sticky">
+        <a href="#order-form">GET 10% OFF — ORDER NOW</a>
+      </div>
+      <div class="loading" id="loading">
+        <div class="loading-box">
+          <div class="spinner"></div>
+          <p>आपकी request भेजी जा रही है...</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="pp-overlay" id="pp-overlay" onclick="closeIfOutside(event)">
+      <div class="pp-modal" id="pp-modal">
+        <button class="pp-close" onclick="closeModal()" aria-label="Close">
+          ×
+        </button>
+        <div id="pp-content"></div>
+      </div>
+    </div>
+
+    <script>
+      const $ = (s) => document.querySelector(s),
+        $$ = (s) => [...document.querySelectorAll(s)];
+
+      // Sticky order bar: hidden on the banner, visible from Problem onward, hidden on the order form.
+      const stickyOrder = $("#order-sticky");
+      const bannerSection = $(".banner");
+      const problemSection = bannerSection?.nextElementSibling || null;
+      const orderFormSection = $("#order-form");
+      let stickyFrame = 0;
+
+      function isInViewport(element) {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      }
+
+      function updateStickyOrder() {
+        stickyFrame = 0;
+        if (!stickyOrder) return;
+
+        const problemStarted =
+          problemSection && problemSection.getBoundingClientRect().top < window.innerHeight;
+        const hideOnBanner = isInViewport(bannerSection) && !problemStarted;
+        const hideOnOrderForm = isInViewport(orderFormSection);
+
+        stickyOrder.classList.toggle("show", !(hideOnBanner || hideOnOrderForm));
+      }
+
+      function scheduleStickyUpdate() {
+        if (!stickyFrame) stickyFrame = requestAnimationFrame(updateStickyOrder);
+      }
+
+      window.addEventListener("scroll", scheduleStickyUpdate, { passive: true });
+      window.addEventListener("resize", scheduleStickyUpdate);
+      updateStickyOrder();
+      $$(".faq button").forEach((b) =>
+        b.addEventListener("click", () => {
+          const f = b.parentElement;
+          f.classList.toggle("open");
+          b.querySelector("span").textContent = f.classList.contains("open")
+            ? "−"
+            : "+";
+        }),
+      );
+
+      const UTM_KEYS = [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_campaign_id",
+        "utm_adset",
+        "utm_adset_id",
+        "utm_ad",
+        "utm_ad_id",
+        "utm_placement",
+      ];
+      function setHidden(n, v) {
+        const i = document.querySelector('#orderForm input[name="' + n + '"]');
+        if (i) i.value = v || "";
+      }
+      function cookie(n) {
+        const m = document.cookie.match(
+          new RegExp("(?:^|;\\s*)" + n + "=([^;]*)"),
+        );
+        return m ? decodeURIComponent(m[1]) : "";
+      }
+      function capture() {
+        const p = new URLSearchParams(location.search);
+        UTM_KEYS.forEach((k) =>
+          setHidden(k, p.get(k) || sessionStorage.getItem(k) || ""),
+        );
+        UTM_KEYS.forEach((k) => {
+          if (p.get(k))
+            try {
+              sessionStorage.setItem(k, p.get(k));
+            } catch (_) { /* storage may be unavailable */ }
+        });
+        const fbclid = p.get("fbclid") || "";
+        setHidden("fbclid", fbclid);
+        setHidden(
+          "fbc",
+          cookie("_fbc") || (fbclid ? "fb.1." + Date.now() + "." + fbclid : ""),
+        );
+        setHidden("fbp", cookie("_fbp"));
+      }
+      capture();
+
+      // Order form: allow only letters/spaces in name and valid Indian mobile digits.
+      const nameInput = $("#name");
+      const phoneInput = $("#phone");
+
+      nameInput?.addEventListener("input", () => {
+        nameInput.value = nameInput.value
+          .replace(/[^A-Za-z\u0900-\u097F ]/g, "")
+          .replace(/\s{2,}/g, " ")
+          .replace(/^\s+/, "");
+        err("nameError", false);
+      });
+
+      phoneInput?.addEventListener("input", () => {
+        let value = phoneInput.value.replace(/\D/g, "").slice(0, 10);
+        if (value && !/^[6-9]/.test(value)) value = value.slice(1);
+        phoneInput.value = value;
+        err("phoneError", false);
+      });
+
+      function validName(v) {
+        return /^[A-Za-z\u0900-\u097F]+(?: [A-Za-z\u0900-\u097F]+)+$/.test(
+          v.trim(),
+        );
+      }
+      function validPhone(v) {
+        return /^[6-9][0-9]{9}$/.test(v);
+      }
+      function err(id, on) {
+        document.getElementById(id)?.classList.toggle("show", on);
+      }
+      function eventId() {
+        return globalThis.crypto?.randomUUID
+          ? globalThis.crypto.randomUUID()
+          : "evt-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+      }
+      function submitForm(e) {
+        e.preventDefault();
+        const n = $("#name").value.trim(),
+          p = $("#phone").value.trim();
+        const nameOk = validName(n);
+        const phoneOk = validPhone(p);
+        err("nameError", !nameOk);
+        err("phoneError", !phoneOk);
+        if (!nameOk || !phoneOk) return false;
+        capture();
+        $("#date").value = new Intl.DateTimeFormat("en-IN", {
+          timeZone: "Asia/Kolkata",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        }).format(new Date());
+        $("#event_id").value = eventId();
+        const loading = $("#loading");
+        loading.classList.add("show");
+        const form = e.target,
+          formData = new FormData(form);
+        if (typeof fbq === "function")
+          fbq(
+            "track",
+            "Lead",
+            { content_name: "GathHeal" },
+            { eventID: $("#event_id").value },
+          );
+        const endpoint = "https://script.google.com/macros/s//exec";
+        if (!endpoint || endpoint.endsWith("/macros/s//exec")) {
+          setTimeout(() => {
+            loading.classList.remove("show");
+            alert(
+              "Form endpoint अभी configure नहीं है। अपना Google Apps Script URL जोड़ें।",
+            );
+          }, 350);
+          return false;
+        }
+        fetch(endpoint, { method: "POST", body: formData })
+          .then((r) => {
+            if (!r.ok) throw new Error("Submission failed");
+            form.reset();
+            location.href = "./Thankyou.html";
+          })
+          .catch(() => {
+            loading.classList.remove("show");
+            alert(
+              "नेटवर्क समस्या के कारण request भेजी नहीं जा सकी। कृपया फिर कोशिश करें।",
+            );
+          });
+        return false;
+      }
+
+      const contents = {
+        privacy: `<div class="pp-title">Privacy Policy</div><span class="pp-badge">GathHeal</span><p>हम order/contact request के लिए आपका नाम, मोबाइल नंबर और campaign-related information collect कर सकते हैं। इसका उपयोग request processing, customer support और delivery coordination के लिए किया जाता है।</p><div class="pp-note">Personal information को अनावश्यक रूप से third parties को बेचने के उद्देश्य से उपयोग नहीं किया जाता।</div>`,
+        terms: `<div class="pp-title">Terms & Conditions</div><span class="pp-badge">Please read carefully</span><ul><li>Individual results may vary.</li><li>GathHeal medical diagnosis या emergency treatment का replacement नहीं है।</li><li>Product और service information उपलब्ध program के अनुसार बदल सकती है।</li><li>Live website पर certificates, reviews और claims केवल verified information के आधार पर दिखाएँ।</li></ul>`,
+        shipping: `<div class="pp-title">Shipping Policy</div><span class="pp-badge">Pan-India</span><p>COD और delivery availability serviceable locations पर निर्भर हो सकती है। Confirmed order के बाद shipping और delivery details customer को उपलब्ध कराई जाएँगी।</p>`,
+        cancel: `<div class="pp-title">Cancellation Policy</div><span class="pp-badge">Order Support</span><p>Cancellation request order processing/shipping status के अनुसार स्वीकार की जा सकती है। जल्द से जल्द customer support से संपर्क करें।</p>`,
+        contact: `<div class="pp-title">Contact Us</div><span class="pp-badge">Customer Support</span><p>Product, order, guidance या delivery संबंधी सहायता के लिए अपने verified business phone, email और address को live website पर यहाँ जोड़ें।</p>`,
+        legal: `<div class="pp-title">Legal Disclaimer</div><span class="pp-badge">Important</span><p>GathHeal को किसी unexplained lump की diagnosis, guaranteed cure या emergency medical treatment का replacement नहीं माना जाना चाहिए। नई, तेजी से बढ़ने वाली, कठोर, दर्दनाक या लंबे समय से मौजूद गांठ के लिए qualified healthcare professional से evaluation करवाएँ।</p><div class="pp-note">Testimonials और before/after material केवल वास्तविक, documented और consented customer information के साथ प्रकाशित करें। Individual results may vary.</div>`,
+      };
+      // Policy modal does not modify body/html positioning or overflow.
+      // The fixed overlay itself blocks background interaction, so the page never reflows or shakes.
+      function lockPage() {}
+      function unlockPage() {}
+      function openModal(k) {
+        if (!contents[k]) return;
+        $("#pp-content").innerHTML = contents[k];
+        lockPage();
+        $("#pp-overlay").classList.add("show");
+        $("#pp-modal").scrollTo(0, 0);
+      }
+      function closeModal() {
+        if (!$("#pp-overlay").classList.contains("show")) return;
+        $("#pp-overlay").classList.remove("show");
+        unlockPage();
+      }
+      function closeIfOutside(e) {
+        if (e.target === $("#pp-overlay")) closeModal();
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+      $("#pp-overlay").addEventListener(
+        "wheel",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+      $("#pp-overlay").addEventListener(
+        "touchmove",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+      window.closeIfOutside = closeIfOutside;
+    </script>
+  </body>
+</html>
